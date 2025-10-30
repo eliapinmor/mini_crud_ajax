@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mini CRUD AJAX (fetch + JSON)</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <h1>Mini CRUD con fetch() (sin Base de Datos)</h1>
+    <p class="texto-explicativo">
+        Esta pantalla usa JavaScript para hablar con la API PHP y actualizar la tabla sin recargar la
+        página.
+    </p>
+    <!-- Zona de mensajes al usuario -->
+    <div id="msg" aria-live="polite"></div>
+    <!-- Formulario para crear usuarios (no recarga la página) -->
+    <form id="formCreate" autocomplete="off">
+        <label>Nombre
+            <input type="text" name="nombre" required>
+        </label>
+        <label>Email
+            <input type="email" name="email" required>
+        </label>
+        <button type="submit">Agregar usuario</button>
+    </form>
+    <!-- Tabla del listado -->
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <!-- Nuestro JavaScript (lo completaremos en la siguiente parte) -->
+    <script src="/assets/js/main.js" defer></script>
+</body>
+
+</html>
